@@ -1,4 +1,4 @@
-import React, { Profiler } from 'react';
+import React from 'react';
 import Header from './Header';
 import IsLoadingAndError from './IsLoadingAndError';
 import Footer from './Footer';
