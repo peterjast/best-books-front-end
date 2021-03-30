@@ -6,12 +6,14 @@ import '../assets/myFavoriteBooks.css';
 class MyFavoriteBooks extends React.Component {
   render() {
     return(
-      <Jumbotron>
-        <h1>My Favorite Books</h1>
-        <p>
-          This is a collection of my favorite books
-        </p>
-      </Jumbotron>
+      <>
+        <Jumbotron className="mx-auto">
+          <h1>My Favorite Books</h1>
+          <p>
+            This is a collection of my favorite books
+          </p>
+        </Jumbotron>
+      </>
     )
   }
 }
