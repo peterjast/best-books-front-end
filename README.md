@@ -1,7 +1,7 @@
 # Best Books Front-end
 
 **Authors**: Peter Staker && Chris Gantt
-**Version**: 1.0.0
+**Version**: 1.2.0
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
@@ -15,6 +15,8 @@
 ## Change Log
 
 03-29-2021 1:59pm - Application now has 0Auth authentication enabled
+
+03-30-2021 4:51pm - Application now connects to backend and requests data about user's favorite books
 
 ## Credit and Collaborations
 
@@ -96,3 +98,27 @@ Start time: 1pm
 Finish time: 1:58
 
 Actual time needed to complete: 58min
+
+***
+
+Name of feature: Connected to Server
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 1:45pm
+
+Finish time: 3:43pm
+
+Actual time needed to complete: 1 hour 58 min
+
+***
+
+Name of feature: Carousel Component
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 3:43pm
+
+Finish time: 4:50pm
+
+Actual time needed to complete: 1 hour 7 min
