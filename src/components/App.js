@@ -7,6 +7,7 @@ import Profile from './Profile';
 import '../assets/App.css';
 import Container from 'react-bootstrap/Container';
 import MyFavoriteBooks from './MyFavoriteBooks';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { withAuth0 } from '@auth0/auth0-react';
 import {
   BrowserRouter as Router,
@@ -25,7 +26,7 @@ class App extends React.Component {
             <Container>
               <Switch>
                 <Route exact path="/">
-                  { this.props.auth0.isAuthenticated && <MyFavoriteBooks />}
+                  { this.props.auth0.isAuthenticated && <MyFavoriteBooks properties={this.props}/>}
                   { !this.props.auth0.isAuthenticated && <Login/> }
                 </Route>
                 <Route exact path="/profile">
