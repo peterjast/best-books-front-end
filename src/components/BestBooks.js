@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
+import bgImg from '../assets/background.jpg';
 
 class BestBooks extends React.Component {
   constructor(props){
@@ -25,18 +26,17 @@ class BestBooks extends React.Component {
     return(
       <>  
       {this.state.books.length > 0 &&
-      <Carousel>
+      <Carousel className="w-50 mx-auto">
       {this.state.books.map((book, i) => (    
         <Carousel.Item key={i}>
             <img
                 className="d-block w-100"
-                src={`holder.js/800x400?text=${book.name}&bg=282c34`}
-                alt={`${book.name} ${this.description}`}
+                src={bgImg}
+                alt={`${book.name} ${book.description}`}
                 />
             <Carousel.Caption>
             <h3>{book.name}</h3>
-            <p>{book.description}</p>
-            <p>{book.status}</p>
+            <p>{`Description: ${book.description} Status: ${book.status}`}</p>
             </Carousel.Caption>
         </Carousel.Item> 
       ))}
