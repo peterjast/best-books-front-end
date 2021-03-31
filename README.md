@@ -122,3 +122,27 @@ Start time: 3:43pm
 Finish time: 4:50pm
 
 Actual time needed to complete: 1 hour 7 min
+
+***
+
+Name of feature: Create a book
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 1:30pm
+
+Finish time: 2:30pm
+
+Actual time needed to complete: 1 hour
+
+***
+
+Name of feature: Delete a book
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 2:30pm
+
+Finish time: 3:30pm
+
+Actual time needed to complete: 1 hour
