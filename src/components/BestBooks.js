@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import bgImg from '../assets/background.jpg';
 import AddBook from './AddBook';
 import BookFormModal from './BookFormModal';
+import Delete from './Delete';
 
 class BestBooks extends React.Component {
   constructor(props){
@@ -59,6 +60,15 @@ class BestBooks extends React.Component {
     }
   }
 
+  deleteBook = async (index) => {
+    const server = process.env.REACT_APP_SERVER;
+    const newBooks = await axios.delete(`${server}/books/${index}`, {params: {email: this.props.properties.auth0.user.email}});
+    console.log(newBooks);
+    const newBookArray = this.state.books.filter((book, i) => index !== i);
+    console.log(newBookArray);
+    this.setState({ books: newBookArray });
+  } 
+
   render() {
     return(
       <>  
@@ -72,7 +82,7 @@ class BestBooks extends React.Component {
                 alt={`${book.name} ${book.description}`}
                 />
             <Carousel.Caption>
-            <h3>{book.name}</h3>
+            <h3>{book.name} <Delete inline index={i} deleteBook={this.deleteBook}/></h3>
             <p>{`Description: ${book.description} Status: ${book.status}`}</p>
             </Carousel.Caption>
         </Carousel.Item> 

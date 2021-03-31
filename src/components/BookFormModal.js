@@ -27,7 +27,7 @@ class BookFormModal extends React.Component {
               <Form.Control type="text" placeholder="Status" onChange={(e) => this.props.updateBookStatus(e.target.value)}/>
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" onClick={this.props.handleClose}>
               Submit
             </Button>
           </Form>
