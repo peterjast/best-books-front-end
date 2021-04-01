@@ -1,21 +1,21 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-class Delete extends React.Component {
+class Update extends React.Component {
   render(){
     return(
       <Button 
         className="bg-info text-light"
         style={{
           position: 'absolute',
-          left: -20,
+          right: -25,
           top: -20,
         }} 
-        onClick={() => this.props.deleteBook(this.props.index)}>
-        X
+        onClick={() => this.props.displayUpdateForm(this.props.index)}>
+        Update
       </Button>
     )
   }
 }
 
-export default Delete;
+export default Update;
