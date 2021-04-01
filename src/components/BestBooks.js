@@ -83,7 +83,7 @@ class BestBooks extends React.Component {
                 />
             <Carousel.Caption>
             <h3>{book.name} <Delete inline index={i} deleteBook={this.deleteBook}/></h3>
-            <p>{`Description: ${book.description} Status: ${book.status}`}</p>
+            <p>{`Description: ${book.description}`} <br /> {`Status: ${book.status}`}</p>
             </Carousel.Caption>
         </Carousel.Item> 
       ))}

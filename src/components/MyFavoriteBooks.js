@@ -9,7 +9,7 @@ class MyFavoriteBooks extends React.Component {
   render() {
     return(
       <>
-        <Jumbotron className="mx-auto">
+        <Jumbotron className="mx-auto w-75 bg-dark text-light">
           <h1>My Favorite Books</h1>
           <p>
             This is a collection of my favorite books
