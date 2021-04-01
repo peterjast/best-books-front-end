@@ -4,7 +4,16 @@ import Button from 'react-bootstrap/Button';
 class Delete extends React.Component {
   render(){
     return(
-      <Button onClick={() => this.props.deleteBook(this.props.index)}>X</Button>
+      <Button 
+        className="bg-info text-light"
+        style={{
+          position: 'absolute',
+          right: -20,
+          top: -20,
+        }} 
+        onClick={() => this.props.deleteBook(this.props.index)}>
+        X
+      </Button>
     )
   }
 }
