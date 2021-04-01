@@ -26,7 +26,7 @@ class App extends React.Component {
             <Container>
               <Switch>
                 <Route exact path="/">
-                  { this.props.auth0.isAuthenticated && <MyFavoriteBooks properties={this.props}/>}
+                  { this.props.auth0.isAuthenticated && <MyFavoriteBooks properties={this.props}/> }
                   { !this.props.auth0.isAuthenticated && <Login/> }
                 </Route>
                 <Route exact path="/profile">
